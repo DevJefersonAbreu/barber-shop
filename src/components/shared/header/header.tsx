@@ -6,7 +6,7 @@ const Header: React.FC = () => {
   return (
     <S.Header>
       <S.LogoContainer>
-        <S.LogoImage src="/barber-logo7.png" alt="Fio & Navalha Barbearia" />
+        <S.LogoImage src="/assets/imageHeader/logo-barber-shop.png" alt="Fio & Navalha Barbearia" />
       </S.LogoContainer>
       <S.Nav>
         <S.NavList>

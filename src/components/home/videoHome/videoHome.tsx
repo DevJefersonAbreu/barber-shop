@@ -1,15 +1,17 @@
+"use client"
+
 import React, { useEffect, useRef } from 'react';
 import * as S from './styles';
 
 const videoSources = [
-  '/assets/homeVideo/video1.mp4',
-  '/assets/homeVideo/video2.mp4',
-  '/assets/homeVideo/video3.mp4',
-  '/assets/homeVideo/video4.mp4',
-  '/assets/homeVideo/video5.mp4',
+  '/assets/videoHome/video1.mp4',
+  '/assets/videoHome/video2.mp4',
+  '/assets/videoHome/video3.mp4',
+  '/assets/videoHome/video4.mp4',
+  '/assets/videoHome/video5.mp4',
 ];
 
-const HomeVideo: React.FC = () => {
+const videoHome: React.FC = () => {
   const videoRef1 = useRef<HTMLVideoElement | null>(null);
   const videoRef2 = useRef<HTMLVideoElement | null>(null);
   const currentVideoIndex = useRef(0); 
@@ -68,4 +70,4 @@ const HomeVideo: React.FC = () => {
   );
 };
 
-export default HomeVideo;
+export default videoHome;

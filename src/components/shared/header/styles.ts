@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
+
 export const Header = styled.header`
-  background-color: #0000002a;
+  background-color: #000000;
   color: white;
   display: flex;
   justify-content: space-around;
@@ -11,6 +12,7 @@ export const Header = styled.header`
   left: 0;
   width: 100%;
   z-index: 1000;
+  border-bottom: #d4a855  5px solid;
 `;
 
 export const LogoContainer = styled.div`
@@ -19,8 +21,9 @@ export const LogoContainer = styled.div`
 `;
 
 export const LogoImage = styled.img`
-  width: 280px;
-  height: 90px;
+margin-top: 10px;
+  width: 253px;
+  height: 71px;
 `;
 
 export const Nav = styled.nav`
@@ -34,9 +37,11 @@ export const NavList = styled.ul`
   display: flex;
   margin: 0;
   padding: 0;
-  font-size: 15px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 500;
+  font-family: Georgia, "Times New Roman", Times, serif;
+
 
   li {
     margin-left: 20px;
@@ -48,7 +53,7 @@ export const NavList = styled.ul`
     transition: color 0.3s;
 
     &:hover {
-      color: #ffeb3b;
+      color: #d4a855;
     }
   }
 
@@ -63,7 +68,7 @@ export const NavList = styled.ul`
 `;
 
 export const BookButton = styled.a`
-  background-color: #0000002a;
+  background-color: #d4a855;
   color: #ffffff;
   padding: 0.4rem 0.5rem;
   font-size: 0.9rem;

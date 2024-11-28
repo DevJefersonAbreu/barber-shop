@@ -8,6 +8,8 @@ export const Container = styled.div`
   align-items: center;
   position: relative;
   overflow: hidden;
+  background-color: #00000080;
+  padding-top: 5rem;
 `;
 
 export const Video = styled.video`
