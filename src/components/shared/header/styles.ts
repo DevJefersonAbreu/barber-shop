@@ -5,7 +5,7 @@ export const Header = styled.header`
   background-color: #000000;
   color: white;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   position: fixed;
   top: 0;
@@ -24,6 +24,7 @@ export const LogoImage = styled.img`
 margin-top: 10px;
   width: 253px;
   height: 71px;
+  margin-left: 40px;
 `;
 
 export const Nav = styled.nav`
@@ -77,6 +78,7 @@ export const BookButton = styled.a`
   transition: background-color 0.3s ease, transform 0.2s ease;
   text-decoration: none;
   box-shadow: 3px 3px 5px #020202b6, -3px -3px 5px #0505056c, 0px 6px 8px rgba(0, 0, 0, 0.555);
+  margin-right: 50px;
 
   &:hover {
     background-color: #0707079c;

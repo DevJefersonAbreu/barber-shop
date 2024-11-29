@@ -11,9 +11,47 @@
     --foreground: #ededed;
   }
 }
+/* Estilos Globais */
+html {
+ 
+  overflow-y: scroll; /* Permite rolar verticalmente */
+  font-family: 'Quicksand', sans-serif; /* Fonte padrão */
+  margin: 0;
+  padding: 0;
+}
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth; /* Rolagem suave */
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", sans-serif;
+  background-color: #f8f9fa; /* Fundo claro */
+  color: #212529; /* Texto escuro */
+}
+
+#videos-section,
+#about-us-section {
+  scroll-snap-align: start; /* Foco inicial em cada seção ao rolar */
+  
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #b99760; /* Cor dourada ao passar o mouse */
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 16px;
 }

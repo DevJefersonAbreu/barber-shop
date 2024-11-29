@@ -6,7 +6,7 @@ export const Container = styled.div`
   justify-content: center;
   background-color: #f5f5f5; 
   position: relative; 
-  margin-top: -23.8rem;
+  margin-top: -26rem;
 `;
 
 export const LogoContainer = styled.div`

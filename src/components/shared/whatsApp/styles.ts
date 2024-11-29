@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const WhatsAppContainer = styled.div`
   position: fixed;
-  bottom: 40px; 
-  right: 50px; 
+  bottom: 45px; 
+  right: 60px; 
   z-index: 1000; 
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
