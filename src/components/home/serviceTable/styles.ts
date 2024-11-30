@@ -8,6 +8,7 @@ export const Container = styled.section`
   align-items: center;
   background-color: #000;
   position: relative; 
+  border-bottom: #d4a855  5px solid;
 `;
 
 export const Image = styled.img`
