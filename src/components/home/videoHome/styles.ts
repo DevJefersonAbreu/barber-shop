@@ -9,7 +9,7 @@ export const Container = styled.div`
   position: relative;
   overflow: hidden;
   background-color: #00000080;
-  padding-top: 5rem;
+  margin-top: 5rem;
 `;
 
 export const Video = styled.video`

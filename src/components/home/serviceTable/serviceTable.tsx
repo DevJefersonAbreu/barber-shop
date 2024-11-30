@@ -10,8 +10,13 @@ const ServiceTable: React.FC = () => {
         src="/assets/imageServiceTable/service-table.png"
         alt="Service Table"
       />
+      <S.ScheduleImage
+        src="/assets/imageServiceTable/Schedule.gif"
+        alt="Schedule Icon"
+      />
     </S.Container>
   );
 };
 
 export default ServiceTable;
+

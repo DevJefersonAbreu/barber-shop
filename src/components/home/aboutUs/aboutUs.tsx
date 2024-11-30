@@ -7,7 +7,7 @@ const AboutUs: React.FC = () => {
     <S.Container>
       <S.Header>Sobre nós</S.Header>
       <S.AboutImage src="/assets/imageAboutUs/about3.png" alt="About Us Image" />
-      <S.Title>A barbearia desde 2024</S.Title>
+      <S.Title>Barbearia desde 2024</S.Title>
       <S.Content>
         <S.ImageContainer>
           <S.Image src="/assets/imageAboutUs/about1.jpg" alt="Barber Shop" />
