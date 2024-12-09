@@ -16,7 +16,7 @@ const Home: React.FC = () => {
   return (
     <S.Container>
       <div id="videos-section" style={{ height: "100vh" }}>
-        <Header />
+        <Header  />
         <VideoHome />
         <LogoHome />
         <WhatsApp />
