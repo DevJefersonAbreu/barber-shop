@@ -1,109 +1,183 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 export const Container = styled.section`
-  background-color: #fff;
-  color: #fff;
-  padding-top: 8rem;
-  text-align: center;
+  background-color: #f8f9fa;
+  color: #333;
+  padding: 6rem 1rem;
   width: 100%;
-  height: 100vh;
-  scroll-snap-align: start;
+
+  @media (min-width: 768px) {
+    padding: 8rem 2rem;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 10rem 4rem;
+  }
 `;
 
-export const Header = styled.h3`
-  font-family: "Quicksand", sans-serif;
-  font-size: 28px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #000000;
-  margin-bottom: 10px;
+export const InnerContainer = styled.div`
+  max-width: 1200px;
+  margin: 0 auto;
 `;
 
-export const AboutImage = styled.img`
-  width: 170px; 
-  height: 22px; 
-  object-fit: cover; 
-  margin: 20px auto; 
-  display: block;
-  margin-top: -8px;
-`;
+export const Header = styled.h2`
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
 
-export const Title = styled.h2`
-  font-family: "Quicksand", sans-serif;
-  font-size: 42px;
-  font-weight: 600;
-  margin-bottom: 30px;
-  color: #3D3D3D;
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-110%);
+    width: 250px;
+    height: 3px;
+    background-color: #d4a855;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 3rem;
+  }
 `;
 
 export const Content = styled.div`
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  padding: 20px;
+  flex-direction: column;
+  gap: 4rem;
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    align-items: flex-start;
+  }
 `;
 
 export const ImageContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
   flex: 1;
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+
+  @media (min-width: 768px) {
+    height: 500px;
+  }
 `;
 
 export const Image = styled.img`
-  width: 300px; 
-  height: 400px; 
-  object-fit: cover; 
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  border: #d4a855 3px solid;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 `;
 
 export const TextContainer = styled.div`
   flex: 1;
-  max-width: 500px;
-  margin-right: 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 `;
 
-export const Subtitle = styled.h4`
-  font-family: "Quicksand", sans-serif;
-  font-size: 30px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: #000;
+export const Subtitle = styled.h3`
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 1rem;
 `;
 
 export const Description = styled.p`
-  font-family: "Quicksand", sans-serif;
-  font-size: 20px;
-  line-height: 1.8;
-  margin-bottom: 30px;
-  color: #322F2A;
+  font-family: "Lato", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #5a6a7a;
 `;
 
-export const ExperienceContainer = styled.div`
+export const ServicesContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 4rem;
+`;
+
+export const ServiceItem = styled.div`
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  }
+`;
+
+export const ServiceIcon = styled.div`
+  font-size: 2.5rem;
+  color: #d4a855;
+  margin-bottom: 1rem;
+`;
+
+export const ServiceName = styled.h4`
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+`;
+
+export const ServiceDescription = styled.p`
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  color: #5a6a7a;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+`;
+
+export const ServiceDetails = styled.p`
+  font-family: "Lato", sans-serif;
+  font-size: 0.9rem;
+  color: #7a8a9a;
+  line-height: 1.6;
+`;
+
+const rotate = keyframes`
+  0% { background-position: 0 0; }
+  100% { background-position: 10px 0; }
+`;
+
+
+export const IconContainer = styled.div`
+  color: #d4a855;
+  margin-right: 1rem;
+`;
+
+export const TraditionContainer = styled.div`
   display: flex;
-  justify-content: space-between;
-  gap: 20px;
+  align-items: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  margin-top: -2rem;
+  margin-left: -.7rem;
 `;
 
-export const ExperienceItem = styled.div`
-  text-align: center;
+export const TraditionText = styled.p`
+  font-family: "Playfair Display", serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2c3e50;
 `;
 
-export const ExperienceNumber = styled.span`
-  font-family: "Quicksand", sans-serif;
-  font-size: 36px;
-  font-weight: bold;
-  color:#d4a855;
-`;
-
-export const ExperienceLabel = styled.span`
-  display: block;
-  font-family: "Quicksand", sans-serif;
-  font-size: 14px;
-  margin-top: 5px;
-  color: #322F2A;
-`;

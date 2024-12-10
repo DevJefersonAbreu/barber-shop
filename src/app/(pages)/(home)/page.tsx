@@ -9,8 +9,8 @@ import WhatsApp from "@/components/shared/whatsApp/whatsApp";
 import ImageScroll from "@/components/home/imageScroll/imageScroll";
 import AboutUs from "@/components/home/aboutUs/aboutUs";
 import ServiceTable from "@/components/home/serviceTable/serviceTable";
-import Location from "@/components/home/location/location"; // Importando o componente
-import Footer from "@/components/shared/footer/footer"; // Certifique-se de usar o caminho correto para o componente Footer
+import Location from "@/components/home/location/location"; 
+import Footer from "@/components/shared/footer/footer"; 
 
 const Home: React.FC = () => {
   return (
@@ -22,7 +22,7 @@ const Home: React.FC = () => {
         <WhatsApp />
         <ImageScroll />
       </div>
-      <div id="about-us-section" style={{ height: "100vh" }}>
+      <div id="about-us-section" style={{ height: "auto" }}>
         <AboutUs />
       </div>
       <div id="service-table-section" style={{ height: "100vh" }}>
