@@ -35,7 +35,7 @@ const AboutUs: React.FC = () => {
   return (
     <S.Container>
       <S.InnerContainer>
-        <S.Header>Sobre a Barbearia Vintage</S.Header>
+        <S.Header>Sobre a Barbearia</S.Header>
         <S.Content>
           <S.ImageContainer>
             <S.Image
@@ -46,7 +46,7 @@ const AboutUs: React.FC = () => {
           <S.TextContainer>
             <S.Subtitle>Tradição e Estilo desde 2024</S.Subtitle>
             <S.Description>
-              Na Barbearia Vintage, acreditamos que um corte de cabelo é mais do que apenas aparência - é uma expressão de quem você é. Fundada em 2024, nossa barbearia combina técnicas tradicionais com tendências modernas para oferecer uma experiência única de cuidados masculinos.
+              Na Barbearia, acreditamos que um corte de cabelo é mais do que apenas aparência - é uma expressão de quem você é. Fundada em 2024, nossa barbearia combina técnicas tradicionais com tendências modernas para oferecer uma experiência única de cuidados masculinos.
             </S.Description>
             <S.Description>
               Nosso espaço foi cuidadosamente projetado para ser um refúgio da agitação do dia a dia. Aqui, você pode relaxar, desfrutar de uma bebida e conversar enquanto nossos mestres barbeiros cuidam do seu visual com precisão e atenção aos detalhes.

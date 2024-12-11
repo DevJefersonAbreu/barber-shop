@@ -46,11 +46,11 @@ export const MapContainer = styled.div`
 
 export const BottomSection = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
   padding: 3rem;
   flex-wrap: wrap;
-  background-color: #000;
+  background-color: #1a1a1a; /* Cor de fundo igual à do header */
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -70,12 +70,14 @@ export const BrandContainer = styled.div`
 `;
 
 export const Logo = styled.img`
-  max-width: 350px;
-  margin-top: -17px;
+  width: 240px;
+  height: 240px;
+  margin-top: -35px;
 `;
 
 export const ContactSection = styled.div`
   flex: 1;
+  margin-left: 4rem;
   h3 {
     font-size: 1.2rem;
     color: #d4a855;
@@ -88,6 +90,7 @@ export const ContactSection = styled.div`
 
 export const LinksSection = styled.div`
   flex: 1;
+  margin-left: 4rem;
   h3 {
     font-size: 1.2rem;
     color: #d4a855;

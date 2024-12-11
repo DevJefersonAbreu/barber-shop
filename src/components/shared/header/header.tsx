@@ -75,12 +75,12 @@ const Header: React.FC = () => {
                 </S.DropdownItem>
               </S.DropdownMenu>
             </S.NavItem>
-            <S.NavItem>
-              <S.NavLink href="/servicos">
-                <Scissors size={20} />
-                <span>Serviços</span>
-              </S.NavLink>
-            </S.NavItem>
+            <S.DropdownItem>
+                  <S.DropdownLink href="/perfil">
+                    <User size={20} />
+                    <span>Perfil</span>
+                  </S.DropdownLink>
+                </S.DropdownItem>
             <S.NavItem>
               <S.NavLink href="/experiencia">
                 <Coffee size={20} />
@@ -114,7 +114,7 @@ const Header: React.FC = () => {
                 <S.DropdownItem>
                   <S.DropdownLink href="/perfil">
                     <User size={20} />
-                    <span>Meu Perfil</span>
+                    <span>Seja um Associado</span>
                   </S.DropdownLink>
                 </S.DropdownItem>
                 <S.DropdownItem>
@@ -133,7 +133,7 @@ const Header: React.FC = () => {
             <Phone size={20} />
             <span>+55 11 3384-5530</span>
           </S.ContactButton>
-          <S.BookButton href="/agendar">Agende Agora</S.BookButton>
+          <S.BookButton href="/agendar">Agendar Horário</S.BookButton>
           <S.MobileMenuButton onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </S.MobileMenuButton>

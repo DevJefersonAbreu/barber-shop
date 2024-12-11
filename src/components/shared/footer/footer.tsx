@@ -12,8 +12,7 @@ const Footer: React.FC = () => {
       <S.BottomSection>
         {/* Informações principais */}
         <S.BrandContainer>
-          <S.Logo src="/assets/imageHeader/logo-barber-shop.png" alt="Original Club Logo" />
-          <p>Faça o seu estilo, seja original!</p>
+          <S.Logo src="/assets/logoHome/barber-shop.png" alt="Original Club Logo" />
         </S.BrandContainer>
 
         {/* Contato */}
@@ -31,7 +30,7 @@ const Footer: React.FC = () => {
             <li><a href="#home">Home</a></li>
             <li><a href="#about-us">Sobre Nós</a></li>
             <li><a href="#services">Serviços</a></li>
-            <li><a href="#barbers">Barbeiros</a></li>
+            <li><a href="#barbers">Endereço</a></li>
             <li><a href="#contact">Contato</a></li>
           </ul>
         </S.LinksSection>

@@ -8,9 +8,6 @@ export const Container = styled.section`
   background-color: #f9f9f9;
   width: 100%;
   height: 100vh;
-  margin-left: 3%;
-  margin-right: 3%;
- 
 `;
 
 export const TextSection = styled.div`
@@ -29,7 +26,6 @@ export const TextSection = styled.div`
     margin-top: -0.1rem;
   }
 
-
   ul {
     list-style-type: none;
     padding: 0;
@@ -43,7 +39,7 @@ export const TextSection = styled.div`
 `;
 
 export const TopSection = styled.div`
-display: contents;
+  display: contents;
   width: 100%;
   padding: 2rem;
   background-color: #f5f5f5;
@@ -56,9 +52,6 @@ display: contents;
 `;
 
 export const WorkingHours = styled.div`
-
-
-
   p {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
@@ -107,3 +100,4 @@ export const MapSection = styled.div`
     height: 100%;
   }
 `;
+

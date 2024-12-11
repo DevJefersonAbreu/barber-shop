@@ -3,16 +3,13 @@ import styled, { keyframes } from "styled-components";
 export const Container = styled.section`
   background-color: #f8f9fa;
   color: #333;
-  padding: 6rem 1rem;
   width: 100%;
+  margin-top: -30rem;
 
   @media (min-width: 768px) {
     padding: 8rem 2rem;
   }
 
-  @media (min-width: 1024px) {
-    padding: 10rem 4rem;
-  }
 `;
 
 export const InnerContainer = styled.div`
@@ -34,7 +31,7 @@ export const Header = styled.h2`
     position: absolute;
     bottom: -10px;
     left: 50%;
-    transform: translateX(-110%);
+    transform: translateX(-75%);
     width: 250px;
     height: 3px;
     background-color: #d4a855;

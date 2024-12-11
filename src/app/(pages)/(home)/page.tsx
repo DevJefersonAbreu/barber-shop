@@ -15,20 +15,20 @@ import Footer from "@/components/shared/footer/footer";
 const Home: React.FC = () => {
   return (
     <S.Container>
-      <div id="videos-section" style={{ height: "100vh" }}>
+      <div id="videos-section" style={{ width: "100%", height: "160vh" }}>
         <Header  />
         <VideoHome />
         <LogoHome />
         <WhatsApp />
         <ImageScroll />
       </div>
-      <div id="about-us-section" style={{ height: "auto" }}>
+      <div id="about-us-section" style={{ width: "100%", height: "160vh" }}>
         <AboutUs />
       </div>
-      <div id="service-table-section" style={{ height: "100vh" }}>
+      <div id="service-table-section" style={{ width: "100%", height: "100vh"  }}>
         <ServiceTable />
       </div>
-      <div id="location-section" style={{ height: "75vh" }}>
+      <div id="location-section" style={{ width: "100%", height: "75vh" }}>
         <Location />
       </div>
       <div id="footer-section">

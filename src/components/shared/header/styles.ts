@@ -20,21 +20,24 @@ export const Header = styled.header<{ $isScrolled: boolean }>`
   top: 0;
   left: 0;
   right: 0;
+  width: 100%; /* Ocupa toda a largura da página */
+  max-width: 100vw; /* Garante que não ultrapasse o tamanho da janela */
   z-index: 1000;
   transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
-  padding: ${props => props.$isScrolled ? '0.5rem 0' : '1rem 0'};
   box-shadow: ${props => props.$isScrolled 
     ? '0 4px 30px rgba(212, 168, 85, 0.1)' 
     : 'none'};
 `;
 
 export const HeaderContent = styled.div`
-  max-width: 1400px;
-  margin: 0 auto;
+ max-width: 1200px; 
+  margin: 0 auto; 
+  width: 100%; /* Garante que o conteúdo ocupe toda a largura disponível */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding:  2rem; /* Espaçamento interno */
+
 `;
 
 export const Nav = styled.nav<{ $isOpen: boolean }>`
@@ -58,9 +61,8 @@ export const Nav = styled.nav<{ $isOpen: boolean }>`
 export const NavList = styled.ul`
   list-style: none;
   display: flex;
-  gap: 2.5rem;
-  margin: 0;
-  padding: 0;
+  gap: 1.5rem;
+  
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -71,6 +73,7 @@ export const NavList = styled.ul`
 
 export const NavItem = styled.li`
   position: relative;
+  
 `;
 
 const navLinkStyles = css`
@@ -110,6 +113,7 @@ const navLinkStyles = css`
 
 export const NavLink = styled(Link)`
   ${navLinkStyles}
+  margin-top: .1rem;
 `;
 
 export const DropdownButton = styled.button`
@@ -117,6 +121,7 @@ export const DropdownButton = styled.button`
   background: none;
   border: none;
   cursor: pointer;
+  margin-top: .1rem;
 `;
 
 export const DropdownMenu = styled.ul<{ $isOpen: boolean }>`
@@ -133,6 +138,8 @@ export const DropdownMenu = styled.ul<{ $isOpen: boolean }>`
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
   animation: ${fadeIn} 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   border: 1px solid rgba(212, 168, 85, 0.1);
+  list-style: none;
+
 
   &::before {
     content: '';
@@ -161,7 +168,7 @@ export const DropdownMenu = styled.ul<{ $isOpen: boolean }>`
 `;
 
 export const DropdownItem = styled.li`
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
 
   &:last-child {
     margin-bottom: 0;
@@ -185,6 +192,7 @@ export const ActionContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 1.5rem;
+  margin-bottom:.7rem ;
 `;
 
 export const ContactButton = styled.a`
