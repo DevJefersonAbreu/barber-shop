@@ -79,11 +79,11 @@ export const NavItem = styled.li`
 const navLinkStyles = css`
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1.6rem;
   color: #fff;
   text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1rem;
+  font-family: "Playfair Display", serif;
+  font-size: 1.4rem;
   font-weight: 500;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   padding: 0.5rem;
@@ -234,7 +234,7 @@ export const BookButton = styled.a`
   &:hover, &:focus {
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(212, 168, 85, 0.4);
-    color: #1a1a1a;
+    color: #fff;
 
     &::before {
       opacity: 1;
@@ -259,6 +259,7 @@ export const MobileMenuButton = styled.button`
   font-size: 1.5rem;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+
 
   &:hover, &:focus {
     color: #d4a855;

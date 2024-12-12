@@ -41,7 +41,7 @@ export const ScrollingText = styled.div`
 export const TextContent = styled.div`
   display: inline-block;
   animation: ${scrollText} 60s linear infinite; // Changed from 40s to 60s
-  color: #d4a855;
+  color: #000;
   font-size: 3.25rem;
   font-weight: bold;
   text-transform: uppercase;

@@ -54,7 +54,7 @@ const Footer: React.FC = () => {
 
       {/* Rodapé com direitos autorais */}
       <S.CopyRight>
-        <p>Barbearia Original Club - Copyright© - Todos os Direitos Reservados.</p>
+        <p>Barbearia - Copyright© - Todos os Direitos Reservados.</p>
         <a href="#privacy-policy">Políticas de Privacidade</a>
       </S.CopyRight>
     </S.Footer>

@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import * as S from "./styles";
 
 interface Product {
@@ -98,11 +98,39 @@ const products: Product[] = [
   }
 ];
 
-const ProductCard: React.FC = () => {
+const MainProducts: React.FC = () => {
+  const [cart, setCart] = useState<{ id: number; name: string; price: number }[]>([]);
+
+  const handleBuy = (product: Product) => {
+    setCart((prev) => [...prev, { id: product.id, name: product.name, price: product.price }]);
+  };
+
+  const handleCancel = (productId: number) => {
+    setCart((prev) => prev.filter((item) => item.id !== productId));
+  };
+
+  const renderButton = (product: Product) => {
+    const isInCart = cart.some((item) => item.id === product.id);
+
+    if (isInCart) {
+      return (
+        <S.CancelButton onClick={() => handleCancel(product.id)}>
+          Cancelar
+        </S.CancelButton>
+      );
+    }
+
+    return (
+      <S.BuyButton onClick={() => handleBuy(product)}>
+        Comprar
+      </S.BuyButton>
+    );
+  };
+
   const formatPrice = (price: number) => {
-    return price.toLocaleString('pt-BR', {
-      style: 'currency',
-      currency: 'BRL'
+    return price.toLocaleString("pt-BR", {
+      style: "currency",
+      currency: "BRL"
     });
   };
 
@@ -117,9 +145,7 @@ const ProductCard: React.FC = () => {
               <S.ProductDescription>{product.description}</S.ProductDescription>
               <S.PriceContainer>
                 <S.ProductPrice>{formatPrice(product.price)}</S.ProductPrice>
-                <S.BuyButton>
-                  Comprar
-                </S.BuyButton>
+                {renderButton(product)}
               </S.PriceContainer>
             </S.ProductInfo>
           </S.ProductCard>
@@ -129,5 +155,4 @@ const ProductCard: React.FC = () => {
   );
 };
 
-export default ProductCard;
-
+export default MainProducts;

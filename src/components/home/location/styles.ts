@@ -14,19 +14,31 @@ export const TextSection = styled.div`
   width: 40%;
   padding: 1rem;
   margin-top: 2%;
+  font-family: "Playfair Display", serif;
 
   h2 {
     font-size: 3rem;
     color: #d4a855;
+    transition: all 0.3s ease;
+
+&:hover {
+  transform: translateY(-5px);
+}
   }
 
   p {
     font-size: 1.6rem;
     color: #666;
     margin-top: -0.1rem;
+    transition: all 0.3s ease;
+
+&:hover {
+  transform: translateY(-5px);
+}
   }
 
   ul {
+    font-family: "Lato", sans-serif;
     list-style-type: none;
     padding: 0;
 
@@ -34,6 +46,12 @@ export const TextSection = styled.div`
       font-size: 1.3rem;
       color: #555;
       margin: 0.5rem 0;
+
+      transition: all 0.3s ease;
+
+&:hover {
+  transform: translateY(-5px);
+}
     }
   }
 `;
@@ -52,6 +70,7 @@ export const TopSection = styled.div`
 `;
 
 export const WorkingHours = styled.div`
+  font-family: "Lato", sans-serif;
   p {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
@@ -68,7 +87,12 @@ export const WhatsAppButton = styled.a`
   font-size: 18px;
   font-weight: bold;
   transition: background-color 0.3s ease;
-  margin-top: 10px;
+  margin-top: 2.5rem;
+  transition: all 0.3s ease;
+
+&:hover {
+  transform: translateY(-5px);
+}
 
   &:hover {
     background-color: #fff;

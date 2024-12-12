@@ -88,3 +88,19 @@ export const BuyButton = styled.button`
   }
 `;
 
+export const CancelButton = styled.button`
+  background: #e63946;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+  margin-top: 8px;
+
+  &:hover {
+    background: #d62839;
+  }
+`;
+

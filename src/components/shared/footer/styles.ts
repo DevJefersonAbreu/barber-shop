@@ -8,6 +8,7 @@ export const Footer = styled.footer`
   flex-direction: column;
   align-items: center;
   border-top: 5px solid #d4a855;
+  
 `;
 
 
@@ -78,6 +79,7 @@ export const Logo = styled.img`
 export const ContactSection = styled.div`
   flex: 1;
   margin-left: 4rem;
+  font-family: "Playfair Display", serif;
   h3 {
     font-size: 1.2rem;
     color: #d4a855;
@@ -91,6 +93,7 @@ export const ContactSection = styled.div`
 export const LinksSection = styled.div`
   flex: 1;
   margin-left: 4rem;
+  font-family: "Playfair Display", serif;
   h3 {
     font-size: 1.2rem;
     color: #d4a855;
@@ -114,6 +117,7 @@ export const LinksSection = styled.div`
 
 export const SocialSection = styled.div`
   flex: 1;
+  font-family: "Playfair Display", serif;
   h3 {
     font-size: 1.2rem;
     color: #d4a855;
@@ -137,6 +141,7 @@ export const CopyRight = styled.div`
   padding: 1rem;
   font-size: 0.9rem;
   background-color: #d4a855;
+  font-family: "Playfair Display", serif;
 
   p {
     color: #322F2A;

@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   max-width: 1200px;
   margin: 0 auto;
-  padding-top: 10rem;
+  padding-top: 12rem;
 `;
 
 export const Header = styled.header`
@@ -43,6 +43,13 @@ export const Image = styled.img`
 export const ProductInfo = styled.div`
   padding: 1.5rem;
   background: rgba(255, 255, 255, 0.9);
+
+  .prince-button{
+    display: flex;
+    margin-top: 10px;
+    gap: .7rem;
+  }
+
 `;
 
 export const Brand = styled.h3`
@@ -93,6 +100,14 @@ export const FeatureOverlay = styled.div`
 export const FeatureText = styled.div`
   text-align: center;
   color: white;
+
+  .prince-button2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: .7rem;
+  }
 `;
 
 export const Title = styled.h2`
@@ -108,3 +123,34 @@ export const Subtitle = styled.p`
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 `;
 
+export const BuyButton = styled.button`
+  background: #d4a855;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+  margin-top:8px;
+
+  &:hover {
+    background: #c49745;
+  }
+`;
+
+export const CancelButton = styled.button`
+  background: #e63946;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+  margin-top: 8px;
+
+  &:hover {
+    background: #d62839;
+  }
+`;

@@ -25,14 +25,19 @@ export const Header = styled.h2`
   text-align: center;
   margin-bottom: 3rem;
   position: relative;
+  transition: all 0.3s ease;
+
+&:hover {
+  transform: translateY(-5px);
+}
 
   &:after {
     content: '';
     position: absolute;
     bottom: -10px;
     left: 50%;
-    transform: translateX(-75%);
-    width: 250px;
+    transform: translateX(-145%);
+    width: 130px;
     height: 3px;
     background-color: #d4a855;
   }
@@ -90,6 +95,11 @@ export const Subtitle = styled.h3`
   font-weight: 600;
   color: #2c3e50;
   margin-bottom: 1rem;
+  transition: all 0.3s ease;
+
+&:hover {
+  transform: translateY(-5px);
+}
 `;
 
 export const Description = styled.p`
@@ -97,6 +107,12 @@ export const Description = styled.p`
   font-size: 1.1rem;
   line-height: 1.6;
   color: #5a6a7a;
+
+  transition: all 0.3s ease;
+
+&:hover {
+  transform: translateY(-5px);
+}
 `;
 
 export const ServicesContainer = styled.div`
@@ -157,6 +173,7 @@ const rotate = keyframes`
 export const IconContainer = styled.div`
   color: #d4a855;
   margin-right: 1rem;
+
 `;
 
 export const TraditionContainer = styled.div`
@@ -169,6 +186,12 @@ export const TraditionContainer = styled.div`
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
   margin-top: -2rem;
   margin-left: -.7rem;
+
+  transition: all 0.3s ease;
+
+&:hover {
+  transform: translateY(-5px);
+}
 `;
 
 export const TraditionText = styled.p`

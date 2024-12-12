@@ -18,6 +18,12 @@ export const Image = styled.img`
   object-fit: contain; /* Garante proporção da imagem */
   border: 2px solid #d4a855; /* Adiciona borda dourada */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 `;
 
 export const ScheduleImage = styled.img`

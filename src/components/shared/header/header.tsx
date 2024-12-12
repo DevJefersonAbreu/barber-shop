@@ -44,32 +44,32 @@ const Header: React.FC = () => {
           <S.NavList>
             <S.NavItem>
               <S.DropdownButton className="dropdown-container" onClick={() => toggleDropdown('home')}>
-                <Home size={20} />
+                <Home size={25} />
                 <span>Home</span>
-                <ChevronDown size={20} />
+                <ChevronDown size={25} />
               </S.DropdownButton>
               <S.DropdownMenu $isOpen={activeDropdown === 'home'}>
                 <S.DropdownItem>
                   <S.DropdownLink href="/sobre">
-                    <Info size={20} />
+                    <Info size={25} />
                     <span>Sobre Nós</span>
                   </S.DropdownLink>
                 </S.DropdownItem>
                 <S.DropdownItem>
                   <S.DropdownLink href="/servicos">
-                    <Scissors size={20} />
+                    <Scissors size={25} />
                     <span>Serviços</span>
                   </S.DropdownLink>
                 </S.DropdownItem>
                 <S.DropdownItem>
                   <S.DropdownLink href="/endereco">
-                    <MapPin size={20} />
+                    <MapPin size={25} />
                     <span>Endereço</span>
                   </S.DropdownLink>
                 </S.DropdownItem>
                 <S.DropdownItem>
                   <S.DropdownLink href="/contato">
-                    <Mail size={20} />
+                    <Mail size={25} />
                     <span>Contato</span>
                   </S.DropdownLink>
                 </S.DropdownItem>
@@ -77,49 +77,49 @@ const Header: React.FC = () => {
             </S.NavItem>
             <S.DropdownItem>
                   <S.DropdownLink href="/perfil">
-                    <User size={20} />
+                    <User size={25} />
                     <span>Perfil</span>
                   </S.DropdownLink>
                 </S.DropdownItem>
             <S.NavItem>
               <S.NavLink href="/experiencia">
-                <Coffee size={20} />
+                <Coffee size={25} />
                 <span>Experiência</span>
               </S.NavLink>
             </S.NavItem>
             <S.NavItem>
               <S.NavLink href="/galeria">
-                <Camera size={20} />
+                <Camera size={25} />
                 <span>Galeria</span>
               </S.NavLink>
             </S.NavItem>
             <S.NavItem>
               <S.NavLink href="/loja">
-                <ShoppingBag size={20} />
+                <ShoppingBag size={25} />
                 <span>Loja</span>
               </S.NavLink>
             </S.NavItem>
             <S.NavItem>
               <S.DropdownButton className="dropdown-container" onClick={() => toggleDropdown('more')}>
                 <span>Mais</span>
-                <ChevronDown size={20} />
+                <ChevronDown size={25} />
               </S.DropdownButton>
               <S.DropdownMenu $isOpen={activeDropdown === 'more'}>
                 <S.DropdownItem>
                   <S.DropdownLink href="/gift-card">
-                    <Gift size={20} />
-                    <span>Gift Card</span>
+                    <Gift size={25} />
+                    <span>Cartão Presente</span>
                   </S.DropdownLink>
                 </S.DropdownItem>
                 <S.DropdownItem>
                   <S.DropdownLink href="/perfil">
-                    <User size={20} />
+                    <User size={25} />
                     <span>Seja um Associado</span>
                   </S.DropdownLink>
                 </S.DropdownItem>
                 <S.DropdownItem>
                   <S.DropdownLink href="/agendamentos">
-                    <Calendar size={20} />
+                    <Calendar size={25} />
                     <span>Meus Agendamentos</span>
                   </S.DropdownLink>
                 </S.DropdownItem>
@@ -129,10 +129,6 @@ const Header: React.FC = () => {
         </S.Nav>
 
         <S.ActionContainer>
-          <S.ContactButton href="tel:+5511338455300">
-            <Phone size={20} />
-            <span>+55 11 3384-5530</span>
-          </S.ContactButton>
           <S.BookButton href="/agendar">Agendar Horário</S.BookButton>
           <S.MobileMenuButton onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
