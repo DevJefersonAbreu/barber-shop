@@ -6,6 +6,7 @@ import * as S from "./styles";
 const MainProducts: React.FC = () => {
   const [cart, setCart] = useState<{ name: string; price: string }[]>([]);
   const [purchasedProducts, setPurchasedProducts] = useState<string[]>([]);
+  
 
   const handleBuy = (name: string, price: string) => {
     setCart((prev) => [...prev, { name, price }]);

@@ -77,6 +77,11 @@ export const MainFeature = styled.div`
   height: 500px;
   border-radius: 12px;
   overflow: hidden;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
 `;
 
 export const FeatureImage = styled.img`
